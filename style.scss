@@ -1,0 +1,375 @@
+@import url("https://fonts.googleapis.com/css2?family=Brygada+1918&family=Cormorant+Infant:wght@600&family=Philosopher:wght@700&family=Viaoda+Libre&display=swap");
+
+// font-family: 'Brygada 1918', serif;       Regular 400
+// font-family: 'Cormorant Infant', serif;   Semi-bold 600
+// font-family: 'Philosopher', sans-serif;   Bold 700
+// font-family: 'Viaoda Libre', cursive;     Regular 400
+
+* {
+  box-sizing: border-box;
+}
+
+// header
+
+.header {
+  background-image: url(images/header.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding-bottom: 35%;
+}
+
+.container {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+[class*="col-"] {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.col-xs-12,
+.col-sm-12,
+.col-md-12 {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+.logo {
+  text-align: center;
+  a {
+    img {
+      height: 100px;
+    }
+  }
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  li {
+    width: 25%;
+    text-align: center;
+    a {
+      font-family: "Cormorant Infant", serif;
+      font-size: 30px;
+      font-weight: 600;
+      text-decoration: none;
+      color: #4b7ebd;
+      line-height: 100px;
+      padding: 10px 20px;
+    }
+    a:hover {
+      border: 2px solid #f2c433;
+      border-radius: 10px;
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+  }
+}
+
+.registration {
+  display: flex;
+  margin-top: 30px;
+  .login,
+  .register {
+    width: 50%;
+    display: flex;
+    a {
+      text-align: center;
+
+      img {
+        height: 40px;
+      }
+    }
+
+    .log-info {
+      font-family: "Cormorant Infant", serif;
+      font-size: 20px;
+      font-weight: 600;
+      color: #4b7ebd;
+      line-height: 50px;
+      padding-left: 5px;
+    }
+  }
+}
+
+.col-xs-12,
+.col-sm-12,
+.col-md-12 {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+// main content
+
+.article {
+  display: flex;
+}
+
+.big-header {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  font-size: 40px;
+  font-family: "Philosopher", sans-serif;
+  font-weight: 700;
+  color: #4b7ebd;
+  width: 100%;
+}
+.paragraph {
+  font-family: "Viaoda Libre", cursive;
+  font-weight: 400;
+  font-size: 25px;
+  width: 50%;
+  line-height: normal;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+.picture {
+  width: 50%;
+  text-align: center;
+  img {
+    width: 100%;
+  }
+}
+.yellow {
+  background-color: #f8eed1;
+}
+.blue {
+  background-color: #e8f1fc;
+}
+
+/* tablet */
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+  .col-sm-2 {
+    flex: 0 0 16.66667%;
+    max-width: 16.66667%;
+  }
+  .log-info {
+    display: none;
+  }
+  .paragraph {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+/* laptop */
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+  .log-info {
+    display: block;
+  }
+  .login,
+  .register {
+    flex-direction: column;
+  }
+  .paragraph {
+    font-size: 25px;
+    line-height: 25px;
+  }
+}
+
+/* desctop */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1170px;
+  }
+  .col-md-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+  .col-md-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .login,
+  .register {
+    flex-direction: row;
+  }
+  .paragraph {
+    font-size: 30px;
+    line-height: 30px;
+  }
+}
+
+/* only mobile */
+@media (max-width: 767px) {
+  .log-info {
+    display: none;
+  }
+  .logo {
+    text-align: left;
+  }
+  .header {
+    padding-bottom: 28%;
+  }
+  .mobile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .menu {
+    overflow-x: scroll;
+  }
+  .col-xs-none {
+    width: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .col-xs-2 {
+    flex: 0 0 16.66667%;
+    max-width: 16.66667%;
+  }
+  .col-xs-4 {
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+  }
+  .col-xs-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .col-xs-8 {
+    flex: 0 0 66.66666%;
+    max-width: 66.66666%;
+  }
+  .col-xs-10 {
+    flex: 0 0 83.33333%;
+    max-width: 83.33333%;
+  }
+  .logo {
+    text-align: center;
+    a {
+      img {
+        height: 65px;
+      }
+    }
+  }
+
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    li {
+      width: 25%;
+      text-align: center;
+      margin: 0px 10px;
+      a {
+        font-family: "Cormorant Infant", serif;
+        font-size: 28px;
+        font-weight: 600;
+        text-decoration: none;
+        color: #375b86;
+        line-height: 40px;
+        padding: 10px 20px;
+      }
+    }
+  }
+  .menu {
+    flex-direction: column;
+    margin-top: 0px;
+    margin-bottom: 5px;
+  }
+  .nav-mobile-menu {
+    margin-top: 20px;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    right: 5px;
+  }
+  .nav-mobile-menu span {
+    height: 4px;
+    background-color: #4779b6;
+    position: absolute;
+    left: 0;
+    right: 0;
+    transition: 0.25s ease-in-out;
+  }
+  .nav-mobile-menu span:first-child {
+    top: 1px;
+  }
+  .nav-mobile-menu span:nth-child(2) {
+    top: 8px;
+  }
+  .nav-mobile-menu span:last-child {
+    bottom: 1px;
+  }
+  .navigation {
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 280px;
+    max-width: 280px;
+    height: 170px;
+    transform: translateX(150%);
+    transition: all 500ms ease-in-out;
+    z-index: 10;
+  }
+  .nav-mobile-menu.active-menu span:first-child {
+    top: 50%;
+    transform: rotate(45deg);
+  }
+  .nav-mobile-menu.active-menu span:nth-child(2) {
+    top: 50%;
+    transform: rotate(-45deg);
+  }
+  .nav-mobile-menu.active-menu span:last-child {
+    transform: scale(0);
+  }
+  .navigation.active-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+    top: 65px;
+    background-color: #ecbe2d;
+    height: 170px;
+    width: 150px;
+  }
+
+  .registration {
+    .login,
+    .register {
+      a {
+        img {
+          height: 25px;
+        }
+      }
+    }
+  }
+
+  .big-header {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 30px;
+  }
+  .article {
+    flex-direction: column;
+  }
+  .paragraph {
+    font-size: 20px;
+    width: 100%;
+    line-height: 25px;
+    margin-right: 0px;
+  }
+  .picture {
+    width: 100%;
+    text-align: center;
+    img {
+      width: 100%;
+    }
+  }
+}
