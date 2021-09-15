@@ -11,3 +11,8 @@ mobileMenu.addEventListener("click", function () {
     mainMenu.classList.remove("active-menu");
   }
 });
+
+// slider
+
+new Splide(".splide").mount();
+new Splide(".splide2").mount();
