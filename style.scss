@@ -188,82 +188,11 @@
   padding-bottom: 20px;
 }
 
-.slide1 {
+[class*="slide1"] {
   background: url(images/location1.jpg) no-repeat 50% 50%;
   background-size: contain;
 }
-.slide2 {
-  background: url(images/location2.jpg) no-repeat 50% 50%;
-  background-size: contain;
-}
-.slide3 {
-  background: url(images/location3.jpg) no-repeat 50% 50%;
-  background-size: contain;
-}
-.slide4 {
-  background: url(images/location4.jpg) no-repeat 50% 50%;
-  background-size: contain;
-}
-.slide5 {
-  background: url(images/location5.jpg) no-repeat 50% 50%;
-  background-size: contain;
-}
-.slide6 {
-  background: url(images/location6.jpg) no-repeat 50% 50%;
-  background-size: contain;
-}
-.slide7 {
-  background: url(images/location7.jpg) no-repeat 50% 50%;
-  background-size: contain;
-}
-.slide8 {
-  background: url(images/location8.jpg) no-repeat 50% 50%;
-  background-size: contain;
-}
-.slide9 {
-  background: url(images/location9.jpg) no-repeat 50% 50%;
-  background-size: contain;
-}
-.slide10 {
-  background: url(images/location10.jpg) no-repeat 50% 50%;
-  background-size: contain;
-}
-.slide11 {
-  background: url(images/location11.jpg) no-repeat 50% 50%;
-  background-size: contain;
-}
-.slide12 {
-  background: url(images/location12.jpg) no-repeat 50% 50%;
-  background-size: contain;
-}
-.slide13 {
-  background: url(images/person1.jpeg) no-repeat 50% 50%;
-  background-size: contain;
-}
-.slide14 {
-  background: url(images/person2.jpg) no-repeat 50% 50%;
-  background-size: contain;
-}
-.slide15 {
-  background: url(images/person3.jpg) no-repeat 50% 50%;
-  background-size: contain;
-}
-.slide16 {
-  background: url(images/person4.jpg) no-repeat 50% 50%;
-  background-size: contain;
-}
-.slide17 {
-  background: url(images/person5.jpg) no-repeat 50% 50%;
-  background-size: contain;
-}
-.slide18 {
-  background: url(images/person6.jpg) no-repeat 50% 50%;
-  background-size: contain;
-}
-.slide19 {
-  background: url(images/person7.jpg) no-repeat 50% 50%;
-  background-size: contain;
-}
+
 .slider-content {
   position: absolute;
   top: 50%;
